@@ -14,7 +14,21 @@ Architecture-specific tags:
 
  - `latest-amd64` ([Dockerfile](https://github.com/nuvla/example-rstudio/blob/master/Dockerfile))
 
-## How to use this image
+## How to register this image in a Nuvla installation
+
+To register this container on your Nuvla on-premise installation, clone the sources
+from the
+[nuvla/example-rstudio](https://github.com/nuvla/example-rstudio)
+GitHub, then run the following commands, after having exported the required environment variables:
+
+```sh
+pip install nuvla-api
+python add-module.py
+```
+
+You should now see the module component in the App Store called *RStudio*.
+
+## How to use this image locally
 
 To run the container:
 
