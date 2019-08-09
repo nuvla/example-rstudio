@@ -66,7 +66,7 @@ with open('/root/password.txt', 'r') as f:
 # write value to Nuvla deployment parameter
 #
 
-param_id = deployment_param_href(deployment_id, deployment_id.split('/')[1], 'password')
+param_id = deployment_param_href(deployment_id, None, 'password')
 
 if password is not None:
     api.edit(param_id, {'value': password})
